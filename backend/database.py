@@ -6,7 +6,7 @@ class Database:
         self.cur = None
 
     def connect(self):
-        self.db = mysql.connector.connect(db="friend_location_db", user="friend_location_user")
+        self.db = mysql.connector.connect(db="friend_location_db", user="fl_user")
         self.cur = self.db.cursor()
 
     def push(self, location_object):
